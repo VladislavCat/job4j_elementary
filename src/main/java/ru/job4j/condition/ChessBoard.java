@@ -20,7 +20,7 @@ public class ChessBoard {
         resX = x1 - x2;
         resY = y1 - y2;
         if (Math.abs(resX) == Math.abs(resY)) {
-            return resX;
+            return Math.abs(resX);
         } else {
             return 0;
         }

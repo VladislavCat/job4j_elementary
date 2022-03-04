@@ -4,6 +4,29 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ChessBoardTest {
+
+    @Test
+    public void wayIs3() {
+        int x1 = 1;
+        int y1 = 0;
+        int x2 = 4;
+        int y2 = 3;
+        int result = ChessBoard.way(x1, y1, x2, y2);
+        int expected = 3;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void wayIs2() {
+        int x1 = 6;
+        int y1 = 7;
+        int x2 = 7;
+        int y2 = 6;
+        int result = ChessBoard.way(x1, y1, x2, y2);
+        int expected = 1;
+        Assert.assertEquals(expected, result);
+    }
+
     @Test
     public void wayIs5() {
         int x1 = 6;
