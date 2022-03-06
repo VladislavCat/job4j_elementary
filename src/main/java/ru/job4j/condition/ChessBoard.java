@@ -16,11 +16,8 @@ public class ChessBoard {
     }
 
     private static double distance(int x1, int y1, int x2, int y2) {
-        int resX, resY;
-        resX = x1 - x2;
-        resY = y1 - y2;
-        if (Math.abs(resX) == Math.abs(resY)) {
-            return Math.abs(resX);
+        if (Math.abs(x1 - x2) == Math.abs(y1 - y2)) {
+            return Math.abs(x1 - x2);
         } else {
             return 0;
         }
