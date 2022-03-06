@@ -17,4 +17,11 @@ public class FactorialTest {
        int expected = 1;
        Assert.assertEquals(expected, res);
     }
+
+    @Test
+    public void whenCalculateFactorialForTenThenThree() {
+        int res = Factorial.calc(10);
+        int expected = 3628800;
+        Assert.assertEquals(expected, res);
+    }
 }
