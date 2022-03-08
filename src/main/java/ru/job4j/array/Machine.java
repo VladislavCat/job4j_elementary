@@ -8,8 +8,8 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         int resSum = money - price;
-        for (int i = 0; i < coins.length; i++) {
-            while (coins[i] <= resSum) {
+        for (int i : coins) {
+            while (i <= resSum) {
                 resSum -= coins[i];
                 rsl[size++] = coins[i];
             }
